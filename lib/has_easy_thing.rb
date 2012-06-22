@@ -3,6 +3,7 @@ class HasEasyThing < ActiveRecord::Base
   attr_accessor :model_cache, :definition, :value_cache
   before_validation :get_definition
   validate :validate_type_check, :validate_validate
+  attr_accessible :context, :name, :value
   
   def get_definition
     self.model_cache = model if model_cache.blank?
@@ -38,12 +39,14 @@ class HasEasyThing < ActiveRecord::Base
   end
   
   def value=(v)
-    method_missing(:value=, v.to_yaml)
+    super
+    @attributes['value'] = v.to_yaml
     self.value_cache = v
   end
   
   def value
-    self.value_cache ||= YAML.load(method_missing(:value))
+    super
+    self.value_cache ||= YAML.load(@attributes['value'])
   end
   
 end
