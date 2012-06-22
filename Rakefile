@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "has_easy"
   gem.homepage = "http://github.com/jwigal/has_easy"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Easy access and creation of "has many" relationships for ActiveRecord models.}
+  gem.description = %Q{Easy access and creation of "has many" relationships for ActiveRecord models. It uses a "vertical table" so schema changes aren't necessary when you add fields. Use this plugin to add preferences, options, flags, etc to your models.}
   gem.email = "jeff@assignr.com"
   gem.authors = ["Jeff Wigal"]
   # dependencies defined in Gemfile
