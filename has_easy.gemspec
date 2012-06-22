@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.9.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Jeff Wigal"]
-  s.date = %q{2012-03-28}
+  s.authors = ["Aafaq Hassan"]
+  s.date = %q{2012-06-22}
   s.description = %q{TODO: longer description of your gem}
-  s.email = %q{jeff@assignr.com}
+  s.email = %q{aafaqhassan@gmail.com}
   s.extra_rdoc_files = [
     "README",
     "README.rdoc"
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     "lib/tasks/has_easy_tasks.rake",
     "test/test_has_easy.rb"
   ]
-  s.homepage = %q{http://github.com/jwigal/has_easy}
+  s.homepage = %q{http://github.com/aafaq-hassan/has_easy}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.2}
