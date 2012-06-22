@@ -19,8 +19,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{Easy access and creation of "has many" relationships for ActiveRecord models.}
   gem.description = %Q{Easy access and creation of "has many" relationships for ActiveRecord models. It uses a "vertical table" so schema changes aren't necessary when you add fields. Use this plugin to add preferences, options, flags, etc to your models.}
-  gem.email = "jeff@assignr.com"
-  gem.authors = ["Jeff Wigal"]
+  gem.email = "aafaqhassan@gmail.com"
+  gem.authors = ["Aafaq Hassan"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
