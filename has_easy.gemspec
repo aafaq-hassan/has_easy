@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aafaq Hassan"]
   s.date = %q{2012-06-22}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Easy access and creation of "has many" relationships for ActiveRecord models. It uses a "vertical table" so schema changes aren't necessary when you add fields. Use this plugin to add preferences, options, flags, etc to your models.}
   s.email = %q{aafaqhassan@gmail.com}
   s.extra_rdoc_files = [
     "README",
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.5.2}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Easy access and creation of "has many" relationships for ActiveRecord models.}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
