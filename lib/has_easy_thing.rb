@@ -40,13 +40,13 @@ class HasEasyThing < ActiveRecord::Base
   
   def value=(v)
     super
-    @attributes['value'] = v.to_yaml
+    self.attributes['value'] = v.to_yaml
     self.value_cache = v
   end
   
   def value
     super
-    self.value_cache ||= YAML.load(@attributes['value'])
+    self.value_cache ||= YAML.load(self.attributes['value'])
   end
   
 end
