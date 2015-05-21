@@ -3,7 +3,6 @@ class HasEasyThing < ActiveRecord::Base
   attr_accessor :model_cache, :definition, :value_cache
   before_validation :get_definition
   validate :validate_type_check, :validate_validate
-  attr_accessible :context, :name, :value
   
   def get_definition
     self.model_cache = model if model_cache.blank?
